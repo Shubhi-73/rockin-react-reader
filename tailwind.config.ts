@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				serif: ['Georgia', 'serif'],
+				sans: ['Helvetica', 'Arial', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -51,6 +56,12 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				news: {
+					red: '#E92A3D',
+					black: '#121212',
+					gray: '#F5F5F5',
+					darkGray: '#707070',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
