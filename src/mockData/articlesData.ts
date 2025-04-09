@@ -26,25 +26,25 @@ export const latestNews = [
     excerpt: "Researchers find that moderate coffee consumption may extend lifespan by up to 3 years.",
     author: "Dr. Emily Richards",
     date: "April 7, 2025"
-  },
-  {
-    id: 3,
-    title: "Major Film Studio Announces New Franchise",
-    category: "Entertainment",
-    imageUrl: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop",
-    excerpt: "The $500 million project will span multiple films and streaming series.",
-    author: "James Wilson",
-    date: "April 6, 2025"
-  },
-  {
-    id: 4,
-    title: "Global Stock Markets Hit Record Highs",
-    category: "Business",
-    imageUrl: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070&auto=format&fit=crop",
-    excerpt: "Investor confidence soars as economic indicators show strong growth across major economies.",
-    author: "Robert Zhang",
-    date: "April 5, 2025"
   }
+  // {
+  //   id: 3,
+  //   title: "Major Film Studio Announces New Franchise",
+  //   category: "Entertainment",
+  //   imageUrl: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop",
+  //   excerpt: "The $500 million project will span multiple films and streaming series.",
+  //   author: "James Wilson",
+  //   date: "April 6, 2025"
+  // },
+  // {
+  //   id: 4,
+  //   title: "Global Stock Markets Hit Record Highs",
+  //   category: "Business",
+  //   imageUrl: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070&auto=format&fit=crop",
+  //   excerpt: "Investor confidence soars as economic indicators show strong growth across major economies.",
+  //   author: "Robert Zhang",
+  //   date: "April 5, 2025"
+  // }
 ];
 
 export const politicsArticles = [
@@ -118,14 +118,14 @@ export const musicArticles = [
 ];
 
 export const cultureArticles = [
-  {
-    id: 1,
-    title: "Museum Opens Groundbreaking Digital Art Exhibit",
-    category: "Culture",
-    imageUrl: "https://images.unsplash.com/photo-1503058474900-cb37babf8de5?q=80&w=2069&auto=format&fit=crop",
-    author: "Nora White",
-    date: "April 8, 2025"
-  },
+  // {
+  //   id: 1,
+  //   title: "Museum Opens Groundbreaking Digital Art Exhibit",
+  //   category: "Culture",
+  //   imageUrl: "https://images.unsplash.com/photo-1503058474900-cb37babf8de5?q=80&w=2069&auto=format&fit=crop",
+  //   author: "Nora White",
+  //   date: "April 8, 2025"
+  // },
   {
     id: 2,
     title: "Traditional Festival Attracts Record Attendance",
@@ -141,15 +141,15 @@ export const cultureArticles = [
     imageUrl: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2087&auto=format&fit=crop",
     author: "Julia Simpson",
     date: "April 6, 2025"
-  },
-  {
-    id: 4,
-    title: "Street Art Revival Transforms Urban Landscapes",
-    category: "Culture",
-    imageUrl: "https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?q=80&w=2115&auto=format&fit=crop",
-    author: "Carlos Rivera",
-    date: "April 5, 2025"
   }
+  // {
+  //   id: 4,
+  //   title: "Street Art Revival Transforms Urban Landscapes",
+  //   category: "Culture",
+  //   imageUrl: "https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?q=80&w=2115&auto=format&fit=crop",
+  //   author: "Carlos Rivera",
+  //   date: "April 5, 2025"
+  // }
 ];
 
 export const trendingTopics = [
