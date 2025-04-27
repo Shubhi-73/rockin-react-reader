@@ -16,11 +16,20 @@ const Login = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // For now, just show a toast since we don't have backend authentication yet
-    toast({
-      title: "Login functionality coming soon",
-      description: "Please check back later",
-    });
+    
+    if (email === "abc@gmail.com" && password === "123") {
+      toast({
+        title: "Success",
+        description: "You have successfully logged in",
+      });
+      navigate("/");
+    } else {
+      toast({
+        title: "Error",
+        description: "Invalid credentials. Use abc@gmail.com and 123 to login.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
