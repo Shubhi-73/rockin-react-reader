@@ -1,17 +1,17 @@
-
 import { useState } from "react";
-import { Menu, Search, X } from "lucide-react";
+import { Menu, Search, X, LogIn } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const NewsHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header className="border-b border-gray-200 sticky top-0 bg-white z-10">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Mobile menu button */}
           <Button 
             variant="ghost" 
             size="icon" 
@@ -21,14 +21,12 @@ const NewsHeader = () => {
             <Menu className="h-6 w-6" />
           </Button>
 
-          {/* Logo */}
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-serif font-bold italic">
               <span className="text-news-red">The</span> Daily
             </h1>
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6 items-center">
             <a href="#" className="font-medium hover:text-news-red transition-colors">News</a>
             <a href="#" className="font-medium hover:text-news-red transition-colors">Politics</a>
@@ -42,20 +40,42 @@ const NewsHeader = () => {
             >
               {searchOpen ? <X className="h-5 w-5" /> : <Search className="h-5 w-5" />}
             </Button>
+            <Button 
+              variant="default"
+              onClick={() => navigate('/login')}
+              className="bg-news-red hover:bg-red-700"
+            >
+              <LogIn className="mr-2 h-5 w-5" />
+              Sign In
+            </Button>
           </nav>
-          
-          {/* Mobile search button */}
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="md:hidden"
-            onClick={() => setSearchOpen(!searchOpen)}
-          >
-            {searchOpen ? <X className="h-5 w-5" /> : <Search className="h-5 w-5" />}
-          </Button>
+
+          <div className="md:hidden flex items-center gap-2">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              onClick={() => setSearchOpen(!searchOpen)}
+            >
+              {searchOpen ? <X className="h-5 w-5" /> : <Search className="h-5 w-5" />}
+            </Button>
+            <Button 
+              variant="default"
+              size="icon"
+              onClick={() => navigate('/login')}
+              className="bg-news-red hover:bg-red-700"
+            >
+              <LogIn className="h-5 w-5" />
+            </Button>
+            <Button 
+              variant="ghost" 
+              size="icon"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <Menu className="h-6 w-6" />
+            </Button>
+          </div>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden pt-4 pb-2">
             <nav className="flex flex-col space-y-4">
@@ -68,7 +88,6 @@ const NewsHeader = () => {
           </div>
         )}
 
-        {/* Search bar */}
         {searchOpen && (
           <div className="pt-4 pb-2">
             <div className="relative">
